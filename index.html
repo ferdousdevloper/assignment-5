@@ -145,7 +145,7 @@
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class=" ">
-                            <h3 class="text-[#030712CC] font-bold lg:text-3xl lg:leading-[58px]">Couple20</h3>
+                            <h3 class="text-[#030712CC] font-bold lg:text-3xl lg:leading-[58px]">Couple 20</h3>
                             <p class="text-[#030712CC] font-inter font-medium leading-9">Coupon Code</p>
                         </div>
                     </div>
@@ -393,7 +393,9 @@
                             <div class="border-b-2">
                                 <div  class="flex justify-between text-[#03071299] text-lg leading-7 font-inter ">
                                     <div id="selected-seats-output" class="flex justify-between"></div>
-                                    
+                                    <p></p>
+                                    <p>Economy</p>
+                                    <p>550 TK</p>
                                 </div>
                             </div>
                             <!-- Total price -->
@@ -402,18 +404,18 @@
                                 <h3>BDT <span id="total-price">0</span></h3>
                             </div>
 
-                            <div class="relative flex items-center mt-4">
+                            <div id="coupon-Div" class="relative flex items-center mt-4">
                                 <!-- Coupon input field -->
-                                <input class=" py-5 px-5  w-full rounded-xl" type="text"
-                                    placeholder="Have any copupon?">
+                                <input id="coupon-element"  class=" py-5 px-5  w-full rounded-xl" type="text"
+                                    placeholder="Have any coupon?">
                                 <!-- coupon apply button -->
-                                <button
-                                    class="bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl absolute right-2">Apply</button>
+                                <button id="coupon-btn" onclick="" 
+                                    class="btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl absolute right-2 ">Apply</button>
                             </div>
                             <!-- Discount amount -->
                             <div class="flex justify-between text-[#030712] font-inter font-medium mt-4">
                                 <h3>Discount Amount</h3>
-                                <h3>BDT <span>0</span></h3>
+                                <h3>BDT <span id="discount-price">0</span></h3>
                             </div>
                             <!-- Grand total -->
                             <div class="flex justify-between text-[#030712] font-inter font-medium mt-4 pb-8">

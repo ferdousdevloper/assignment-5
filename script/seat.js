@@ -34,6 +34,36 @@ function toggleSeat(seatId) {
     const selectedSeatsArray = Array.from(document.getElementsByClassName('selected'));
     const selectedSeatsText = selectedSeatsArray.map(seat => seat.innerText);
     selectedSeatsOutput.textContent = selectedSeatsText.join(', ');
+
+    
     seatButton.style.backgroundColor = seatButton.classList.contains('selected') ? 'green' : 'white';
     seatButton.style.color = seatButton.classList.contains('selected') ? 'white' : 'green';
 }
+//_______________________________________________________________________________________________________
+
+const couponBtn = document.getElementById('coupon-btn');
+const couponDiv = document.getElementById('coupon-Div');
+couponBtn.addEventListener('click', function(){
+    const couponElement = document.getElementById('coupon-element').value;
+    console.log(couponElement);
+
+    if(totalPrice >= 2200){
+        if(couponElement === "NEW15"){
+            const discountElement = document.getElementById('discount-price');
+            const discountAmount = totalPrice * 0.15;
+            discountElement.innerText =discountAmount.toFixed(2);
+            couponDiv.classList.add('hidden');
+            const grandTotal = document.getElementById('grand-total')
+            grandTotal.innerText = totalPrice - discountAmount.toFixed(2);
+
+        }
+        if(couponElement === "Couple 20"){
+            const discountElement = document.getElementById('discount-price');
+            const discountAmount = totalPrice * 0.2;
+            discountElement.innerText =discountAmount.toFixed(2);
+            couponDiv.classList.add('hidden');
+            const grandTotal = document.getElementById('grand-total')
+            grandTotal.innerText = totalPrice - discountAmount.toFixed(2);
+        }
+    }
+})
