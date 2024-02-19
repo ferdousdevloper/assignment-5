@@ -74,7 +74,7 @@
             </div>
             <div class="navbar-end">
 
-                <button onclick="buyTicket()" 
+                <button onclick="buyTicket()"
                     class="btn font-raleway text-xl border-colorPrimary bg-[#1DD1001A] text-colorPrimary hover:bg-black duration-500">Bus
                     <img src="images/bus-icon.png" alt=""> </button>
 
@@ -85,7 +85,7 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- BANNER SECTION -->
-        <section class="mx-5 lg:container lg:mx-auto mt-5 mb-72">
+        <section class="mx-5 lg:container lg:mx-auto mt-5 mb-72 relative">
             <div class="carousel w-full ">
                 <div id="slide1" class="carousel-item relative w-full flex flex-col justify-center items-center ">
                     <img src="images/banner.png" class="w-full" />
@@ -96,19 +96,63 @@
                         <h3 class="text-colorPrimary font-raleway lg:text-6xl font-extrabold">BD Paribahan</h3>
                         <p class="text-white lg:text-lg lg:mt-4 font-inter lg:leading-8">Yes, you can execute unit tests
                             and
-                            observe the outcomes directly within the application. The integrated testing features
-                            provide a seamless experience, enabling you to efficiently assess the results.</p>
+                            observe the outcomes directly within the application. enabling you to efficiently assess the
+                            results.</p>
                         <!-- ----------SWIPE BUTTON------------- -->
                         <div><button onclick="buyTicketScroll()"
-                                class=" bg-colorPrimary border-0 lg:mt-8 lg:text-xl font-bold font-raleway lg:py-5 lg:px-8 px-2 rounded-xl hover:bg-black hover:text-colorPrimary duration-500 ">Buy
+                                class=" bg-colorPrimary border-0 lg:mt-8 lg:text-xl font-bold font-raleway lg:py-5 py-1 px-8 px-2 text-white rounded-xl hover:bg-black hover:text-colorPrimary duration-500 ">Buy
                                 Tickets</button></div>
                     </div>
                 </div>
+
             </div>
 
+            </div>
+            <!-- cart section -->
+            <div class="lg:absolute bottom-[-60px] left-[100px] right-[100px]">
+                <div class="lg:flex justify-between ">
+                    <!-- flex-1 -->
+                    <div
+                        class="flex gap-4 bg-white rounded-3xl border-b-2 border-colorPrimary p-8 justify-center text-center items-center">
+                        <div>
+                            <img src="images/people.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-[#030712] text-4xl font-bold">500K+</h3>
+                            <p class="text-[#03071299] text-base">Registered users</p>
+                        </div>
+
+                    </div>
+                    <div
+                        class="flex gap-4 bg-white rounded-3xl border-b-2 border-colorPrimary p-8 justify-center text-center items-center">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-[#030712] text-4xl font-bold">1.7 lacks</h3>
+                            <p class="text-[#03071299] text-base">Tickets sold</p>
+                        </div>
+
+                    </div>
+                    <div
+                        class="flex gap-4 bg-white rounded-3xl border-b-2 border-colorPrimary p-8 justify-center text-center items-center">
+                        <div>
+                            <img src="images/stoppage.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-[#030712] text-4xl font-bold">80K+</h3>
+                            <p class="text-[#03071299] text-base">Rental partners</p>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </section>
+
+
+
         <!-- COUPON SECTION -->
         <section class="mx-5 lg:container lg:mx-auto mt-5 mb-32">
             <!-- coupon description -->
@@ -165,18 +209,20 @@
         </section>
         <!-- TICKET DESCRIPTION SECTION START-->
         <section id="scroll-div" class="mt-[120px] border-t-[5px] border-colorPrimary rounded-[90px]">
-            <section  class="mt-[120px]">
+            <section class="mt-[120px]">
                 <div class="mx-5 lg:container lg:mx-auto mt-5 pb-32">
                     <!-- TICKET TITLES & DESCRIPTION -->
                     <div class="flex flex-col justify-center items-center">
                         <div class="max-w-[736px] text-center">
                             <h1 class="text-[#030712] text-5xl font-raleway font-bold mb-6">B.D. Paribahan</h1>
-                            <p class="text-[#03071299] text-lg leading-7 font-inter">Convenient online bus ticket booking
+                            <p class="text-[#03071299] text-lg leading-7 font-inter">Convenient online bus ticket
+                                booking
                                 platform, offering easy reservations, secure
-                                payments, and reliable travel options for seamless journeys and customer satisfaction.</p>
+                                payments, and reliable travel options for seamless journeys and customer satisfaction.
+                            </p>
                         </div>
                     </div>
-    
+
                     <!-- flex -->
                     <div class="flex flex-col lg:flex-row items-center bg-white  rounded-3xl mt-[50px]">
                         <div class=" flex-1">
@@ -187,8 +233,10 @@
                                         <img src="images/bus-logo.png" alt="">
                                     </div>
                                     <div>
-                                        <h3 class="text-[#030712] text-3xl font-raleway font-bold">Greenline Paribahan</h3>
-                                        <p class="text-[#03071299] text-lg leading-7 font-inter">Coach-009-WEB ! AC_Business
+                                        <h3 class="text-[#030712] text-3xl font-raleway font-bold">Greenline Paribahan
+                                        </h3>
+                                        <p class="text-[#03071299] text-lg leading-7 font-inter">Coach-009-WEB !
+                                            AC_Business
                                         </p>
                                     </div>
                                 </div>
@@ -207,11 +255,13 @@
                                 <div class="bg-[#F7F8F8] p-6 ml-8 rounded-3xl  ">
                                     <div class="flex flex-col lg:flex-row items-center justify-between mb-6">
                                         <h3 class="text-[#03071299] text-lg font-semibold font-raleway">Route</h3>
-                                        <h3 class="text-[#030712] text-lg font-semibold font-raleway">Dhaka - Sylhet</h3>
+                                        <h3 class="text-[#030712] text-lg font-semibold font-raleway">Dhaka - Sylhet
+                                        </h3>
                                     </div>
                                     <hr class="border-2 border-dashed ">
                                     <div class="flex flex-col lg:flex-row items-center justify-between mb-6 my-6">
-                                        <h3 class="text-[#03071299] text-lg font-semibold font-raleway">Departure Time</h3>
+                                        <h3 class="text-[#03071299] text-lg font-semibold font-raleway">Departure Time
+                                        </h3>
                                         <h3 class="text-[#030712] text-lg font-semibold font-raleway">9:00 PM</h3>
                                     </div>
                                     <hr class="border-2 border-dashed ">
@@ -227,23 +277,23 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                             </div>
                             <!--  -->
                         </div>
                         <div>
-                            <img class="rotate-90 lg:rotate-180" src="images/info-devider.png" alt="">
+                            <img class="rotate-90 max-sm:hidden  lg:rotate-180" src="images/info-devider.png" alt="">
                         </div>
                         <!-- fear -->
-                        <div class="flex flex-col px-14 justify-center items-center">
+                        <div class="flex flex-col px-14 justify-center items-center pb-5">
                             <img src="images/fare.png" alt="">
                             <h2 class="text-[#030712] text-3xl font-bold leading-10 font-raleway">550 TK</h2>
                             <p class="text-[#03071299] text-2xl font-semibold leading-7 font-raleway">Per Seat</p>
                         </div>
                     </div>
-    
+
                 </div>
-    
+
             </section>
             <!-- TICKET DESCRIPTION SECTION END-->
             <!--  -->
@@ -271,11 +321,11 @@
                                 <img src="images/seat-green-filled.png" alt="">
                                 <p class="text-colorPrimary text-lg leading-7 font-inter">Selected</p>
                             </div>
-    
-    
+
+
                         </div>
                         <hr class="border-2 border-dashed my-6 ">
-    
+
                         <div class=" flex justify-end">
                             <button disabled class="btn bg-[#0307121A] px-9 mb-6"><img class=""
                                     src="images/tabler-icon-steering-wheel.svg" alt=""></button>
@@ -316,9 +366,9 @@
                                 class="btn seat-btn col-span-2 bg-[#0307121A] px-8">C2</button>
                             <div class=""></div>
                             <button id="C3" onclick="toggleSeat('C3')" onclick="selectedSeat(this)"
-                                class="btn seat-btn col-span-2 bg-[#0307121A] px-8">c3</button>
+                                class="btn seat-btn col-span-2 bg-[#0307121A] px-8">C3</button>
                             <button id="C4" onclick="toggleSeat('C4')" onclick="selectedSeat(this)"
-                                class="btn seat-btn col-span-2 bg-[#0307121A] px-8">c4</button>
+                                class="btn seat-btn col-span-2 bg-[#0307121A] px-8">C4</button>
                             <div>
                                 <p>D</p>
                             </div>
@@ -403,15 +453,15 @@
                                 class="btn seat-btn col-span-2 bg-[#0307121A] px-8">J3</button>
                             <button id="J4" onclick="toggleSeat('J4')" onclick="selectedSeat(this)"
                                 class="btn seat-btn col-span-2 bg-[#0307121A] px-8">J4</button>
-    
-    
+
+
                         </div>
-    
-    
+
+
                     </div>
                     <div class="border-2 border-dashed my-6">
                     </div>
-    
+
                     <div class="flex-1">
                         <div>
                             <h2 class="text-[#030712] text-2xl font-raleway font-semibold">Select Your seat</h2>
@@ -420,13 +470,14 @@
                             <hr class="border-2 border-dashed my-6">
                         </div>
                         <div>
-    
+
                             <div class="bg-[#F7F8F8] p-8 rounded-xl ">
                                 <!-- flex -->
                                 <div class="flex justify-between ">
                                     <!------------------- selected seat tag id for java ----------------------->
                                     <h3 class="text-[#030712] font-inter font-medium">Seat <span id="count-output"
-                                            class="bg-colorPrimary text-white text-base py-1 px-2 rounded-xl">0</span></h3>
+                                            class="bg-colorPrimary text-white text-base py-1 px-2 rounded-xl">0</span>
+                                    </h3>
                                     <h3 class="text-[#030712] font-inter font-medium">Class</h3>
                                     <h3 class="text-[#030712] font-inter font-medium">Price</h3>
                                 </div>
@@ -445,14 +496,14 @@
                                     <h3>Total Price</h3>
                                     <h3>BDT <span id="total-price">0</span></h3>
                                 </div>
-    
-                                <div id="coupon-Div" class="relative flex items-center mt-4">
+
+                                <div id="coupon-Div" class="lg:relative flex lg:flex-row flex-col  items-center mt-4">
                                     <!-- Coupon input field -->
-                                    <input disabled id="coupon-element" class=" py-5 px-5  w-full rounded-xl" type="text"
-                                        placeholder="Have any coupon?">
+                                    <input disabled id="coupon-element" class=" py-5 px-5  w-full rounded-xl mb-2"
+                                        type="text" placeholder="Have any coupon?">
                                     <!-- coupon apply button -->
                                     <button disabled id="coupon-btn" onclick=""
-                                        class="btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl absolute right-2  hover:bg-black hover:text-colorPrimary duration-500">Apply</button>
+                                        class="btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl lg:absolute right-2  hover:bg-black hover:text-colorPrimary duration-500 mb-2">Apply</button>
                                 </div>
                                 <!-- Discount amount -->
                                 <div class="flex justify-between text-[#030712] font-inter font-medium mt-4">
@@ -467,40 +518,47 @@
                             </div>
                             <label class="form-control w-full mt-8">
                                 <div class="">
-                                    <h3 for="name" class="text-[#030712] font-semibold font-inter my-6">Passenger Name*</h3>
+                                    <h3 for="name" class="text-[#030712] font-semibold font-inter my-6">Passenger Name*
+                                    </h3>
                                     <input name="name" id="name" type="text" placeholder="Enter your name"
                                         class="input p-6 rounded-xl input-bordered w-full " />
-    
+
                             </label>
                             <label class="form-control w-full ">
                                 <div class="">
-                                    <h3 for="phone" class="text-[#030712] font-semibold font-inter my-6">Phone Number*</h3>
+                                    <h3 for="phone" class="text-[#030712] font-semibold font-inter my-6">Phone Number*
+                                    </h3>
                                     <input name="phone" id="phone" type="text" placeholder="Enter your phone number"
                                         class="input p-6 rounded-xl input-bordered w-full " />
-    
+
                             </label>
                             <label class="form-control w-full ">
                                 <div class="">
                                     <h3 class="text-[#030712] font-semibold font-inter my-6">Email ID</h3>
                                     <input type="email" placeholder="Enter your email id"
                                         class="input p-6 rounded-xl input-bordered w-full " />
-    
+
                             </label>
                             <!-- You can open the modal using ID.showModal() method -->
                             <button disabled id="submitButton" onclick="my_modal_4.showModal()"
-                                class=" btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl w-full mt-4 hover:bg-black hover:text-colorPrimary duration-500">Next</button>                       
+                                class=" btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl w-full mt-4 hover:bg-black hover:text-colorPrimary duration-500">Next</button>
                             <dialog id="my_modal_4" class="modal">
-                                <div class="flex flex-col justify-center items-center text-center modal-box w-9/12 max-w-5xl">
-                                    <img class="pt-6" src="images/success.png" alt=""> 
-                                    <h3 class="text-[#27AE60] text-2xl font-bold my-10">SUCCESS</h3>                               
-                                    <p class="py-2 text-[#4A4A4A] lg:text-xl lg:leading-8 max-w-[560px]"><strong class="text-[#4A4A4A] text-xl font-medium">Thank you for Booking Our Bus Seats. 
-                                        We are working hard to find the best service and deals for you.</strong>
+                                <div
+                                    class="flex flex-col justify-center items-center text-center modal-box w-9/12 max-w-5xl">
+                                    <img class="pt-6" src="images/success.png" alt="">
+                                    <h3 class="text-[#27AE60] text-2xl font-bold my-10">SUCCESS</h3>
+                                    <p class="py-2 text-[#4A4A4A] lg:text-xl lg:leading-8 max-w-[560px]"><strong
+                                            class="text-[#4A4A4A] text-xl font-medium">Thank you for Booking Our Bus
+                                            Seats.
+                                            We are working hard to find the best service and deals for you.</strong>
                                         <br>
-                                        Shortly you will find a confirmation in your email.</p>
+                                        Shortly you will find a confirmation in your email.
+                                    </p>
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button, it will close the modal -->
-                                            <button class="btn rounded-[32px] bg-[#27AE60] text-white text-xl font-semibold py-[10px] px-[100px] hover:bg-black hover:text-colorPrimary duration-500">Continue</button>
+                                            <button
+                                                class="btn rounded-[32px] bg-[#27AE60] text-white text-xl font-semibold py-[10px] px-[100px] hover:bg-black hover:text-colorPrimary duration-500">Continue</button>
                                         </form>
                                     </div>
                                 </div>
@@ -511,7 +569,7 @@
                                 <p>Cancellation Policy</p>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </section>
