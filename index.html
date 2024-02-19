@@ -425,15 +425,15 @@
                         </div>
                         <label class="form-control w-full mt-8">
                             <div class="">
-                                <h3 class="text-[#030712] font-semibold font-inter my-6">Passenger Name*</h3>
-                                <input type="text" placeholder="Enter your name"
+                                <h3 for="name" class="text-[#030712] font-semibold font-inter my-6">Passenger Name*</h3>
+                                <input name="name" id="name" type="text" placeholder="Enter your name"
                                     class="input p-6 rounded-xl input-bordered w-full " />
 
                         </label>
                         <label class="form-control w-full ">
                             <div class="">
-                                <h3 class="text-[#030712] font-semibold font-inter my-6">Phone Number*</h3>
-                                <input type="text" placeholder="Enter your phone number"
+                                <h3 for="phone" class="text-[#030712] font-semibold font-inter my-6">Phone Number*</h3>
+                                <input name="phone" id="phone" type="text" placeholder="Enter your phone number"
                                     class="input p-6 rounded-xl input-bordered w-full " />
 
                         </label>
@@ -444,8 +444,8 @@
                                     class="input p-6 rounded-xl input-bordered w-full " />
 
                         </label>
-                        <button
-                            class="bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl w-full mt-4">Apply</button>
+                        <button disabled id="submitButton" onclick="submitForm()"
+                            class=" btn bg-colorPrimary text-white font-semibold py-3 px-5 rounded-xl w-full mt-4">Next</button>
                     </div>
 
                 </div>
@@ -489,7 +489,7 @@
 
 
     <script src="script/index.js"></script>
-    <!-- <script src="script/seat-btnelect.js"></script> -->
+    <!-- <script src="script/seatSelect.js"></script> -->
     <script src="script/seat.js"></script>
 </body>
 
