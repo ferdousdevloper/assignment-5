@@ -102,7 +102,8 @@ couponBtn.addEventListener('click', function () {
             grandTotal.innerText = totalPrice - discountAmount.toFixed(2);
 
         }
-        if (couponElement === "Couple 20") {
+        
+        else if (couponElement === "Couple 20") {
             const discountElement = document.getElementById('discount-price');
             const discountAmount = totalPrice * 0.2;
             discountElement.innerText = discountAmount.toFixed(2);
@@ -110,6 +111,12 @@ couponBtn.addEventListener('click', function () {
             const grandTotal = document.getElementById('grand-total')
             grandTotal.innerText = totalPrice - discountAmount.toFixed(2);
         }
+        else {
+            alert("Please type valid coupon code");
+            return;
+        }
+        
+        
     }
 })
 
