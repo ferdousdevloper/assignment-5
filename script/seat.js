@@ -18,6 +18,7 @@ function updateSummary() {
 
 function toggleSeat(seatId) {
     const seatButton = document.getElementById(seatId);
+    
 
     if (selectedSeats >= 4 && !seatButton.classList.contains('selected')) {
         alert("You can only select up to 4 seats.");
@@ -38,11 +39,18 @@ function toggleSeat(seatId) {
     
     seatButton.style.backgroundColor = seatButton.classList.contains('selected') ? 'green' : 'white';
     seatButton.style.color = seatButton.classList.contains('selected') ? 'white' : 'green';
+
+    if(totalPrice >= 2200){
+        couponBtn.removeAttribute("disabled");
+        couponElement.removeAttribute("disabled");
+
+    }
 }
 //_______________________________________________________________________________________________________
 
 const couponBtn = document.getElementById('coupon-btn');
 const couponDiv = document.getElementById('coupon-Div');
+const couponElement = document.getElementById('coupon-element');
 couponBtn.addEventListener('click', function(){
     const couponElement = document.getElementById('coupon-element').value;
     console.log(couponElement);
